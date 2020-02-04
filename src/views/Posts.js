@@ -1,10 +1,14 @@
 import React from 'react';
-import {posts} from '../../src/data/data';
+import {PostsData} from '../../src/data/PostsData';
+import ListItem from '../../src/components/ListItem';
 
-export const Posts = ({posts}) => {
+export const Posts = () => {
+
     return (
-        <div>
-            POSTS
-        </div>
+        <>
+        {PostsData.map(item => (
+        <ListItem key={item.id} {...item}/>    
+        ))} 
+        </>
     );
 };
