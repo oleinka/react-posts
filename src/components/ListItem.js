@@ -1,11 +1,12 @@
 import React from 'react'; 
+import '../components/ListItem.css';
 
 const ListItem = ({avatar,shortDescription}) => {
     return (
-    <div>
+    <div className="list-item-wrapper">
         <img src={avatar} alt="avatar"/>
-        <div>{shortDescription}</div>
-        <button>Więcej</button>
+        <div className="describtion">{shortDescription}</div>
+        <button>></button>
     </div>
     );
 };

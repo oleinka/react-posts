@@ -1,0 +1,11 @@
+.list-item-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.describtion {
+    width: 60%;
+}
+.list-item-wrapper button {
+    padding: 0 10px;
+}
